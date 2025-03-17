@@ -47,7 +47,10 @@ ul.italist li:nth-child(3n+3){
     color: red;
 }
 
-/* FIX HERE */
-#chess tr td:nth-child(odd){
+#chess tr:nth-child(odd) td:nth-child(odd){
+    background: black !important;
+}
+
+#chess tr:nth-child(even) td:nth-child(even){
     background: black !important;
 }
