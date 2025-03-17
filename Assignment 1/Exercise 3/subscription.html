@@ -5,6 +5,50 @@
     <title>Subscription</title>
 </head>
 <body>
-    
+<header>
+    <h1> Welcome! </h1>
+    <p> Please fill the following form to sign up. </p>
+</header>
+
+<main>
+    <article>
+    <form method="POST">
+        <fieldset>
+            <legend>Personal informations</legend>
+            <label for="fname"> First name</label><br/>
+            <input type="text" id="fname" name="firstname">
+            <br/><br/>
+            <label for="surname"> Last name</label><br/>
+            <input type="text" id="surname" name="lastname">
+            <br/><br/>
+            <label for="birthdate"> Birthdate</label><br/>
+            <input type="date" id="birthdate" name="dateofbirth">
+            <br/><br/>
+            Genre:<br/>
+            <input type="radio" name="genre" value="male" id="m">
+            <label for="m">Male</label>
+            <input type="radio" name="genre" value="female" id="f">
+            <label for="f">Female</label>
+            <input type="radio" name="genre" value="other" id="o">
+            <label for="o">Other</label>
+            <br/><br/>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="password">
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>More about you</legend>
+            <label for="bio"> Short biography</label><br/>
+            <textarea id="bio" name="biography" rows="4" cols="50"></textarea>
+            <br/><br/>
+            <label for="col">Favourite color</label>
+            <input type="color" id="col" name="color">
+        </fieldset>
+        <br/>
+        <input type="submit">
+    </form> 
+    </article>
+</main>
+
 </body>
 </html>
